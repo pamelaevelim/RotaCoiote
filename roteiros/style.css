@@ -16,7 +16,7 @@
 
 body{
     font-family: 'Segoe UI', sans-serif;
-    background: url('img/background.png') center / cover no-repeat;
+    background: url('../img/background.png') center / cover no-repeat;
     display:flex;
     justify-content:center;
     padding:40px 15px;
@@ -88,7 +88,7 @@ body{
 /* RESPONSIVO */
 @media (max-width: 400px){
     body{
-        background: url('img/mobile.png') no-repeat center center fixed;
+        background: url('../img/mobile.png') no-repeat center center fixed;
         background-size: cover;
         justify-content:center;
         padding:20px 10px;
