@@ -86,21 +86,61 @@ body{
 }
 
 /* RESPONSIVO */
-@media (max-width:768px){
+@media (max-width: 400px){
+    body{
+        background: url('img/mobile.png') center / cover no-repeat;
+        display:flex;
+        justify-content:center;
+        padding:20px 10px;
+        height: 100vh;
+    }
 
     .titulo{
-        font-size:1.6rem;
+        font-size:1.4rem;
+    }
+
+    .container{
+        width:100%;
+        padding:0 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .item{
-        flex-direction:column;
+        flex-direction: row;
+        height: 10vh;
+        margin-bottom: 2vh;
+        border-radius:8px;
+        box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        align-items: center;
     }
 
     .numero{
-        width:100%;
-        min-width:unset;
-        font-size:1.3rem;
-        padding:15px;
+        height: 10vh;
+        min-width:50px; /* menor para caber melhor no celular */
+        font-size:1rem;
+        padding:12px;
+    }
+
+    .conteudo{
+        padding:10px;
+    }
+
+    .conteudo h3{
+        font-size:0.8rem;
+        margin-bottom:2px;
+    }
+
+    .conteudo p{
+        font-size:0.70rem;
+        line-height:1.3;
+    }
+
+    .horario{
+        font-size:0.7rem;
+        margin-top:4px;
     }
 
 }
