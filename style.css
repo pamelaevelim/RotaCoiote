@@ -1,0 +1,106 @@
+:root{
+    --verde-floresta:#1B4332;
+    --verde-medio:#2D6A4F;
+    --verde-claro:#40916C;
+    --azul-lago:#1D3557;
+    --azul-claro:#457B9D;
+    --fundo:#F1FAEE;
+    --branco:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: url('img/background.png') center / cover no-repeat;
+    display:flex;
+    justify-content:center;
+    padding:40px 15px;
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+}
+
+.titulo{
+    text-align:center;
+    color: rgb(0, 0, 0);
+    font-size:3.2rem;
+    font-weight:bold;
+    margin-bottom:40px;
+    letter-spacing:1px;
+    font-family: "Oswald", sans-serif;
+}
+
+.item{
+    display:flex;
+    align-items:stretch;
+    margin-bottom:20px;
+    background:var(--branco);
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.3s ease;
+}
+
+.item:hover{
+    transform:translateY(-4px);
+}
+
+.numero{
+    background:linear-gradient(180deg, var(--verde-medio), var(--verde-claro));
+    color:var(--branco);
+    font-size:1.5rem;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    min-width:80px;
+}
+
+.conteudo{
+    padding:20px;
+}
+
+.conteudo h3{
+    margin-bottom:8px;
+    color:var(--verde-floresta);
+}
+
+.conteudo p{
+    color:#444;
+    font-size:0.95rem;
+    line-height:1.5;
+}
+
+.horario{
+    margin-top:8px;
+    font-weight:bold;
+    color:var(--azul-claro);
+}
+
+/* RESPONSIVO */
+@media (max-width:768px){
+
+    .titulo{
+        font-size:1.6rem;
+    }
+
+    .item{
+        flex-direction:column;
+    }
+
+    .numero{
+        width:100%;
+        min-width:unset;
+        font-size:1.3rem;
+        padding:15px;
+    }
+
+}
