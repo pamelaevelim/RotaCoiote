@@ -214,4 +214,14 @@ a{
         margin-top:4px;
     }
 
+    .parabens {
+    background: url(../img/parabensmobile.png) no-repeat center center fixed;
+
+    a{
+        padding: 1vw 2vw 1vh 2vw;
+        font-size: 1rem;
+        top: 85vh;
+    }
+}
+
 }
